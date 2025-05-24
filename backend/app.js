@@ -27,6 +27,7 @@ app.options("*", cors());
 
 const allowedCors = [
   "http://localhost:3001",
+  "http://localhost:5173",
   "http://bootcamp.jumpingcrab.com",
   "https://bootcamp.jumpingcrab.com",
   "http://www.bootcamp.jumpingcrab.com",
