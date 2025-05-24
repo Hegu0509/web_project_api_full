@@ -25,6 +25,16 @@ var cors = require("cors");
 app.use(cors());
 app.options("*", cors());
 
+const allowedCors = [
+  "http://localhost:3001",
+  "http://bootcamp.jumpingcrab.com",
+  "https://bootcamp.jumpingcrab.com",
+  "http://www.bootcamp.jumpingcrab.com",
+  "https://www.bootcamp.jumpingcrab.com",
+];
+
+app.use(cors({ origin: allowedCors }));
+
 app.use(requestLogger);
 
 app.use(error);

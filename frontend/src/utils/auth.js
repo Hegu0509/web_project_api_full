@@ -43,6 +43,6 @@ class Api {
 }
 
 const auth = new Api({
-  baseUrl: "http://localhost:3001",
+  baseUrl: "https://api.bootcamp.jumpingcrab.com",
 });
 export default auth;
